@@ -1,0 +1,6 @@
+--Найдите размеры жестких дисков, совпадающих у двух и более PC. Вывести: HD
+
+SELECT HD
+   FROM PC
+GROUP BY (HD)
+HAVING COUNT(model) >= 2
